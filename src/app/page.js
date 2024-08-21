@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [latestVideo, setLatestVideo] = useState(null);
   
-  const [hideUI] = useState(true);
+  const [hideUI] = useState(false);
 
   const displayedVideos = [
     "https://www.youtube.com/embed/TjqX-0Katbo",
