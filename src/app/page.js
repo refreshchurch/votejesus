@@ -59,7 +59,7 @@ export default function Home() {
           </section>
 
           {/* Cards */}
-          <section className="w-full py-12 md:py-24 bg-gray-100 text-gray-900">
+          {/* <section className="w-full py-12 md:py-24 bg-gray-100 text-gray-900">
             <div className="container mx-auto">
               <h2 className="text-3xl font-bold mb-8 text-center">Key Policies</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -99,10 +99,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* sermons */}
-          <section className="w-full py-8 md:py-10 lg:py-12" style={{ backgroundColor: "#ff3b3b" }}>
+          {/* style={{ backgroundColor: "#ff3b3b" }} */}
+          <section className="w-full py-8 md:py-10 lg:py-12 bg-gray-50" >
             <div className="container mx-auto px-8 md:px-24 lg:px-32 space-y-12">
               {/* Large video section */}
               <h2 className="text-3xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl">Sermons</h2>
