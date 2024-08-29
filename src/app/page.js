@@ -43,7 +43,7 @@ export default function Home() {
           <Navbar />
           <main className="min-h-screen flex flex-col items-center justify-between bg-[#f5f4ee] text-[#0f2967]">
             {/* Hero Video Section */}
-            <section className="relative w-full flex justify-center items-center py-12 px-4" style={{ backgroundColor: "#0f2967" }}>
+            <section className="relative w-full flex justify-center items-center py-12 pt-4 pb-0" style={{ backgroundColor: "#0f2967" }}>
               <div className="relative w-full max-w-4xl mt-10 md:px-8">
                 <video
                   className="w-full h-auto rounded-xl shadow-lg"
@@ -84,7 +84,7 @@ export default function Home() {
             {/* SERMON SECTION */}
             <section className="w-full py-8 md:py-10 lg:py-12 bg-gray-50 px-4" id="sermons">
               <div className="container mx-auto px-8 md:px-24 lg:px-32 space-y-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl">
+                <h2 className="text-3xl md:text-3xl font-bold text-gray-900 tracking-tighter sm:text-4xl md:text-5xl">
                   Vote Jesus
                 </h2>
                 <div className="relative w-full max-w-4xl mx-auto aspect-video overflow-hidden rounded-xl" style={{ backgroundColor: "#0f2967" }}>

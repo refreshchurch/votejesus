@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-base text-center w-[120px]">
           <Link href="#sermons">
             <div className="text-black sm:text-xl text-lg font-semibold hover:text-gray-700">
-              Vote Jesus
+              sermons
             </div>
           </Link>
         </div>
