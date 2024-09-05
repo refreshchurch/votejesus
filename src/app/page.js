@@ -4,23 +4,23 @@ import Image from "next/image";
 import Link from "next/link"
 import { useEffect, useState } from "react";
 import Navbar from "./navbar";  // Import your Navbar component here
-import { hideUI , introVideo } from "./constants";
+import { hideUI, introVideo } from "./constants";
 
 {/* bg-[url('https://hmozwtpunayfdijerkzm.supabase.co/storage/v1/object/public/cmhforklift/temp/Vote%20Jesus/Yellow%20and%20Black%20Divorced%20Party%20Facebook%20Event%20Cover%20Photo-2.png')] bg-cover h-screen */ }
 export default function Home() {
-console.log("introVideo", introVideo)
-console.log("hideUI", hideUI)
+  console.log("introVideo", introVideo)
+  console.log("hideUI", hideUI)
 
   const placeholder = "https://placehold.co/713x400?font=montserrat&text=Sermon+coming+soon...";
-  
-  const latestVideo =  placeholder;
 
-  const displayedVideos = [ ];
+  const latestVideo = placeholder;
 
-    // Ensure at least 4 items, filling with placeholders if needed
-    while (displayedVideos.length < 4) {
-      displayedVideos.push(placeholder);
-    }
+  const displayedVideos = [];
+
+  // Ensure at least 4 items, filling with placeholders if needed
+  while (displayedVideos.length < 4) {
+    displayedVideos.push(placeholder);
+  }
 
   return (
     <>
@@ -60,18 +60,22 @@ console.log("hideUI", hideUI)
                   </div>
                 </section>
                 <section className="w-full py-5 flex justify-center bg-[#0f2967]">
-                  <img
-                    src="./voteJesus.png"
+                  <Image
+                    src="/voteJesus.png"
                     alt="Vote Jesus Theme"
+                    width={300}
+                    height={150}
                     className="h-[150px] md:h-[300px] w-auto mx-4"
                   />
                 </section>
               </>
             ) : (
               <section className="w-full py-5 flex justify-center bg-[#0f2967] lg:h-[700px] sm:h-[400px] h-[200px]">
-                <img
-                  src="./voteJesus.png"
+                <Image
+                  src="/voteJesus.png"
                   alt="Vote Jesus Theme"
+                  width={600} 
+                  height={300}
                   className="h-[150px] sm:h-[300px] lg:h-[600px] w-auto mx-4"
                 />
               </section>
