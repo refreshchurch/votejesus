@@ -15,7 +15,10 @@ export default function Home() {
 
   const latestVideo = placeholder;
 
-  const displayedVideos = [];
+  const displayedVideos = [
+    // 'https://www.youtube.com/embed/ffLkO_v8BjA',
+    // 'https://www.youtube.com/embed/ffLkO_v8BjA',
+  ];
 
   // Ensure at least 4 items, filling with placeholders if needed
   while (displayedVideos.length < 4) {
@@ -104,12 +107,13 @@ export default function Home() {
                 </h2>
                 <div className="relative w-full max-w-4xl mx-auto aspect-video overflow-hidden rounded-xl">
                   <iframe
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     src={latestVideo}
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                    style={{ overflow: "hidden" }}
                   ></iframe>
                 </div>
                 <div className="space-y-6 w-full">
@@ -124,12 +128,13 @@ export default function Home() {
                       >
                         <div className="relative w-full aspect-video overflow-hidden rounded-xl">
                           <iframe
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                             src={videoUrl}
                             title={`YouTube video player ${index + 1}`}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
+                            style={{ overflow: "hidden" }}
                           ></iframe>
                         </div>
                       </div>
