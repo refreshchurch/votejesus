@@ -22,7 +22,7 @@ export default function Navbar() {
 
         {/* Middle - Sermons Link */}
         <div className="flex items-base text-center w-[400px] justify-center">
-            <div className="text-black lg:text-lg md:text-base text-sm font-semibold sm:font-medium hover:text-gray-700">
+            <div className="text-black lg:text-lg md:text-base text-sm font-semibold sm:font-medium">
             <div className="hidden md:inline">In partnership with</div> <a href="https://refresh.church/" className="hover:font-semibold hover:underline hover:pointer">Refresh Church</a>
             </div>
         </div>
