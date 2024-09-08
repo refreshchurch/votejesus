@@ -77,7 +77,7 @@ export default function Home() {
                 <Image
                   src="/voteJesus.png"
                   alt="Vote Jesus Theme"
-                  width={600} 
+                  width={600}
                   height={300}
                   className="h-[150px] sm:h-[300px] lg:h-[600px] w-auto mx-4"
                 />
@@ -106,15 +106,24 @@ export default function Home() {
                   Vote Jesus
                 </h2>
                 <div className="relative w-full max-w-4xl mx-auto aspect-video overflow-hidden rounded-xl">
-                  <iframe
-                    className="w-full h-full object-contain"
-                    src={latestVideo}
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ overflow: "hidden" }}
-                  ></iframe>
+                  {latestVideo === placeholder ? (
+                    <img
+                      alt="coming soon"
+                      className="w-full h-full object-contain"
+                      src={latestVideo}
+                    />
+                  ) : (
+
+                    <iframe
+                      className="w-full h-full object-contain"
+                      src={latestVideo}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      style={{ overflow: "hidden" }}
+                    ></iframe>
+                  )}
                 </div>
                 <div className="space-y-6 w-full">
                   <h2 className="text-xl md:text-2xl inline-block font-bold rounded-lg px-3 py-1 bg-gray-100 text-gray-900">
@@ -127,15 +136,23 @@ export default function Home() {
                         className="flex-none w-[70%] sm:w-[50%] lg:w-[30%] snap-start"
                       >
                         <div className="relative w-full aspect-video overflow-hidden rounded-xl">
-                          <iframe
-                            className="w-full h-full object-contain"
-                            src={videoUrl}
-                            title={`YouTube video player ${index + 1}`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            style={{ overflow: "hidden" }}
-                          ></iframe>
+                          {videoUrl === placeholder ? (
+                            <img
+                              alt="coming soon"
+                              className="w-full h-full object-contain"
+                              src={videoUrl}
+                            />
+                          ) : (
+                            <iframe
+                              className="w-full h-full object-contain"
+                              src={videoUrl}
+                              title={`YouTube video player ${index + 1}`}
+                              frameBorder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                              style={{ overflow: "hidden" }}
+                            ></iframe>
+                          )}
                         </div>
                       </div>
                     ))}
