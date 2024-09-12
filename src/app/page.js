@@ -13,7 +13,7 @@ export default function Home() {
 
   const placeholder = "https://placehold.co/713x400?font=montserrat&text=Sermon+coming+soon...";
 
-  const latestVideo = placeholder;
+  const latestVideo = "https://www.youtube.com/embed/Vlf85TQFy-c";
 
   const displayedVideos = [
     // 'https://www.youtube.com/embed/ffLkO_v8BjA',
