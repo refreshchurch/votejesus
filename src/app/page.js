@@ -16,12 +16,12 @@ export default function Home() {
   const latestVideo = "https://www.youtube.com/embed/Vlf85TQFy-c";
 
   const displayedVideos = [
-    "https://www.youtube.com/embed/Nf2SnRYHPFQ"
-    // 'https://www.youtube.com/embed/ffLkO_v8BjA',
+    "https://www.youtube.com/embed/Nf2SnRYHPFQ",
+    'https://www.youtube.com/embed/Uefk8sWbDgc'
   ];
 
   // Ensure at least 4 items, filling with placeholders if needed
-  while (displayedVideos.length < 4) {
+  while (displayedVideos.length < 2) {
     displayedVideos.push(placeholder);
   }
 
