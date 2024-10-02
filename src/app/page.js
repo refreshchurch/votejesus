@@ -17,7 +17,7 @@ export default function Home() {
 
   const displayedVideos = [
     "https://www.youtube.com/embed/Nf2SnRYHPFQ",
-    'https://www.youtube.com/embed/Uefk8sWbDgc'
+    'https://www.youtube.com/embed/qRFKewYtJTA'
   ];
 
   // Ensure at least 4 items, filling with placeholders if needed
