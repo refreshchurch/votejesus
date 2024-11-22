@@ -1,2 +1,2 @@
-export const hideUI = false
+export const hideUI = true
 export const introVideo = false

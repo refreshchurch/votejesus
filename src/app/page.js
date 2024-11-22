@@ -31,8 +31,9 @@ export default function Home() {
         // better branding here
         <div className="flex items-center justify-center h-screen bg-gray-900 ">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">Coming Soon</h1>
-            <p className="text-lg text-gray-400 mb-12">We are working hard to launch our new website.</p>
+            <h1 className="text-5xl font-bold text-white mb-6">Thank You for Your Interest</h1>
+            <p className="text-lg text-gray-400 mb-4">The partnership initiative this site was created for has concluded. We appreciate your support and involvement during this time-sensitive project.</p>
+            <p className="text-lg text-gray-400 mb-12">For more information about our organization and our ongoing work, please visit our main website.</p>
             <a
               href="https://refresh.church/"
               className="px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300"
